@@ -3,11 +3,11 @@ import 'package:injectable/injectable.dart';
 
 import 'package:{{packageName}}/core/network/network_info.dart';
 
-import 'dtos/{{dto_fn}}.dart';
-import '{{data_source_fn}}.dart';
-import '../domain/{{failure_fn}}.dart';
-import '../domain/{{repository_fn}}.dart';
-import '../domain/models/{{model_export_fn}}.dart';
+import '{{{pathToModule}}}/infrastructure/dtos/{{dto_fn}}.dart';
+import '{{{pathToModule}}}/infrastructure/{{data_source_fn}}.dart';
+import '{{{pathToModule}}}/domain/{{failure_fn}}.dart';
+import '{{{pathToModule}}}/domain/{{repository_fn}}.dart';
+import '{{{pathToModule}}}/domain/models/{{model_export_fn}}.dart';
 
 
 @Injectable(as: {{Repository}})

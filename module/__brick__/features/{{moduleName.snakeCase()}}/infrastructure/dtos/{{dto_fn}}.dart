@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../domain/models/{{model_export_fn}}.dart';
+import '{{{pathToModule}}}/domain/models/{{model_export_fn}}.dart';
 
 part '{{dto_fn}}.freezed.dart';
 part '{{dto_fn}}.g.dart';

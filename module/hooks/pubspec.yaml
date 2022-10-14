@@ -6,3 +6,4 @@ environment:
 dependencies:
   mason: ^0.1.0-dev
   dart_casing: ^2.0.0
+  yaml: ^3.1.1

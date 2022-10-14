@@ -3,9 +3,9 @@ import 'package:dartz/dartz.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 
-import '../domain/{{repository_fn}}.dart';
-import '../domain/models/{{model_export_fn}}.dart';
-import '../domain/{{failure_fn}}.dart';
+import '{{{pathToModule}}}/domain/{{repository_fn}}.dart';
+import '{{{pathToModule}}}/domain/models/{{model_export_fn}}.dart';
+import '{{{pathToModule}}}/domain/{{failure_fn}}.dart';
 
 part '{{bloc_fn}}.freezed.dart';
 part '{{event_fn}}.dart';
