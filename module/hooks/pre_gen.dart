@@ -2,7 +2,6 @@ import 'package:dart_casing/dart_casing.dart';
 import 'package:mason/mason.dart';
 
 void run(HookContext context) {
-  // TODO : get models and parameters in each model from user
   // TODO : get states and events parameters from user
 
   final moduleName = context.vars['moduleName'];
