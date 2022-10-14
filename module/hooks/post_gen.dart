@@ -30,4 +30,16 @@ Future<void> run(HookContext context) async {
     await stdout.addStream(buildRunnerProcess.stdout);
     await stderr.addStream(buildRunnerProcess.stderr);
   }
+  // if (logger.confirm('Would you like to open editor?', defaultValue: true)) {
+  //   final root = folders.sublist(0, libIndex).join('/').toString();
+  //   final openEditorProcess = await Process.start(
+  //     'code',
+  //     [root],
+  //     runInShell: true,
+  //     workingDirectory: root,
+  //   );
+
+  //   await stdout.addStream(openEditorProcess.stdout);
+  //   await stderr.addStream(openEditorProcess.stderr);
+  // }
 }
