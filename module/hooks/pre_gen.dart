@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:dart_casing/dart_casing.dart';
 import 'package:mason/mason.dart';
 
@@ -43,4 +45,6 @@ void run(HookContext context) {
     'api_service_fn': '${moduleNameSnakeCase}_api_services',
     'repository_imp_fn': '${moduleNameSnakeCase}_repository_implementation',
   };
+
+  print(Directory.current.path);
 }

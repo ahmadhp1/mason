@@ -21,11 +21,6 @@ environment:
 #  * an optional prompt phrase used when asking for the variable
 #  * a list of values (enums only)
 vars:
-  packageName:
-    type: string
-    description: Package Name
-    default: flutter_boilerplate
-    prompt: What is the project's package_name?
   moduleName:
     type: string
     description: Module Name
