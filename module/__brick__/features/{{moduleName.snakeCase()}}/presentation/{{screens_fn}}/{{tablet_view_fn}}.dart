@@ -1,5 +1,7 @@
-class {{Tablet}} extends StatelessWidget {
-  const {{Tablet}}({Key? key}) : super(key: key);
+import 'package:flutter/widgets.dart';
+
+class {{TabletView}} extends StatelessWidget {
+  const {{TabletView}}({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

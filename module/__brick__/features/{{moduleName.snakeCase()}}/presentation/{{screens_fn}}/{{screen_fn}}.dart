@@ -1,8 +1,11 @@
 import 'package:flutter/widgets.dart';
-import '{{packageName}}/utils/di/injection.dart';
-import '{{packageName}}/utils/view/layout_builder.dart';
-import '{{pathToModule}}/presentation/{{screens_fn}}/{{phone_view_fn}}.dart';
-import '{{pathToModule}}/presentation/{{screens_fn}}/{{tablet_view_fn}}.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'package:{{packageName}}/utils/di/injection.dart';
+import 'package:{{packageName}}/utils/view/layout_builder.dart';
+import '{{{pathToModule}}}/presentation/{{screens_fn}}/{{phone_view_fn}}.dart';
+import '{{{pathToModule}}}/presentation/{{screens_fn}}/{{tablet_view_fn}}.dart';
+import '{{{pathToModule}}}/application/{{bloc_fn}}/{{bloc_fn}}.dart';
 
 class {{Screen}} extends StatelessWidget {
   const {{Screen}}({Key? key}) : super(key: key);
@@ -13,10 +16,10 @@ class {{Screen}} extends StatelessWidget {
       create: (context) => getIt<{{Bloc}}>(),
       child: ResponsiveLayoutBuilder(
           phone: (context, child) {
-            return {{Phone}}();
+            return const {{PhoneView}}();
           },
           tablet: (context, child) {
-            return {{Tablet}}();
+            return const {{TabletView}}();
           },
         ),
     );
