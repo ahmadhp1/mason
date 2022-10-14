@@ -31,7 +31,7 @@ void run(HookContext context) {
     //*File names *****************
 
     'model_fn': '${moduleNameSnakeCase}_model',
-    'model_exports_fn': '${moduleNameSnakeCase}_models',
+    'model_export_fn': '${moduleNameSnakeCase}_models',
     'dto_fn': '${moduleNameSnakeCase}_dto',
     'failure_fn': '${moduleNameSnakeCase}_failure',
     'bloc_fn': '${moduleNameSnakeCase}_bloc',

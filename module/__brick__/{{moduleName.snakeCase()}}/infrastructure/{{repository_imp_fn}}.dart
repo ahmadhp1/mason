@@ -1,11 +1,13 @@
 import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
 
-import 'package:{{packageName}}/core/network/api_error_handling.dart';
 import 'package:{{packageName}}/core/network/network_info.dart';
 
-import './{{data_source_fn}}.dart';
+import 'dtos/{{dto_fn}}.dart';
+import '{{data_source_fn}}.dart';
 import '../domain/{{failure_fn}}.dart';
+import '../domain/{{repository_fn}}.dart';
+import '../domain/models/{{model_export_fn}}.dart';
 
 
 @Injectable(as: {{Repository}})
@@ -19,7 +21,7 @@ class {{RepositoryImp}} implements {{Repository}}{
      @override
   Future<Either<{{Failure}}, {{Model}}>> get getData async {
     if (await _networkInfo.isConnected == false) {
-         return left(const GeneralFailure.noNetwork());
+         return left(const {{Failure}}.noNetwork());
       }
       try {
         final {{Dto}} dto =
@@ -28,7 +30,7 @@ class {{RepositoryImp}} implements {{Repository}}{
 
         return right(result);
       } catch (e) {
-        return left(const GeneralFailure.unexpected());
+        return left(const {{Failure}}.unexpected());
       }
     }
   }

@@ -1,8 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
 
-import 'package:{{packageName}}/core/network/api_error_handling.dart';
+import 'package:{{packageName}}/core/network/api_error_handler.dart';
 import './dtos/{{dto_fn}}.dart';
+import './{{api_service_fn}}.dart';
 
 
 abstract class {{DataSource}}{

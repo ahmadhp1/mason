@@ -4,7 +4,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 
 import '../domain/{{repository_fn}}.dart';
-import '../domain/models/{{model_exports_fn}}.dart';
+import '../domain/models/{{model_export_fn}}.dart';
 import '../domain/{{failure_fn}}.dart';
 
 part '{{bloc_fn}}.freezed.dart';
